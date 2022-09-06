@@ -49,6 +49,7 @@
 		}
 		#par{
 			color: white;
+			text-align: justify;
 			margin: 10px;
 			display: none;
 		}
