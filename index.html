@@ -7,8 +7,13 @@
 </head>
 <body>
 	<div class="main">
-		<button class="btn" onclick="myFunction()">Điều bất ngờ</button>
+		<div style="display: flex;justify-content: space-around;">
+			<button class="btn" onclick="myFunction()">Nhận lời chúc</button>
+			<button class="btn-number" onclick="myFunction()">Số May Mắn</button>	
+		</div>
+		
 		<div id="par"></div>	
+		<div id="lucky"><p id="lucky-number"></p></div>	
 	</div>
 	
 	
@@ -20,7 +25,11 @@
 		function myFunction() {
 		  var element = document.getElementById("par");
 		  element.classList.toggle("show");
+		  var elementluc = document.getElementById("lucky");
+		  elementluc.classList.toggle("show");
 		}
+
+
 
 		const str = [
 			"Nhân dịp Tết Trung Thu 2022, Thầy Quang xin gửi tới bạn lời chúc sức khỏe, kính bạn và gia đình có một Trung thu thật ấm áp, thật hạnh phúc, vui vẻ bên gia đình và người thân. Thầy Quang xin chân thành cảm ơn và mong muốn tiếp tục nhận được sự tin tưởng cũng như ủng hộ nhiệt tình của bạn trong thời gian sắp tới.", 
@@ -32,7 +41,7 @@
 			"Lớp học Thầy Quang luôn mong muốn mang lại những lợi ích cho bạn từ chất lượng lớp học, học phí và đặc biệt là một đội ngũ hỗ trợ luôn đảm bảo tốt nhất việc học của bạn. Trong quá trình hoàn thiện thương hiệu của lớp học, nếu Lớp học Thầy Quang có sơ sót mong bạn thông cảm, đóng góp ý kiến cũng như giúp đỡ Thầy hoàn thiện những sai sót đó.Nhân dịp Tết Trung Thu 2022, Thầy Quang chúc bạn lời chúc sức khỏe, kính chúc bạn và gia đình có một Trung thu ấm áp, hạnh phúc và vui vẻ, phước lộc – an bình. Một lần nữa xin chân thành cảm ơn sự tin tưởng của bạn, hi vọng bạn sẽ tiếp tục đồng hành cùng thầy vào những năm tới nữa!",
 			"Nhân dịp Tết Trung Thu 2022, Thầy Quang kính chúc bạn cùng gia đình, bạn bè có một mùa Trung thu tuyệt vời, với những kỉ niệm đẹp và ý nghĩa. Đây cũng là dịp để Thầy gửi lời cảm ơn, tri ân chân thành tới bạn đã đồng hành cùng Thầy suốt thời gian qua. Sự tin tưởng của bạn là động lực cho Lớp Học Thầy Quang ngày càng phát triển hơn nữa"];
 		var number = getRndInteger(0, 8);
-		console.log(number);
+		document.getElementById("lucky-number").innerHTML = number;
 		document.getElementById("par").innerHTML = str[number];
 	</script>
 </body>
