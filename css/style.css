@@ -55,7 +55,11 @@
 
 		.show{
 			display: block !important;
-		}	
+		}
+
+		.off{
+			display: none !important;
+		}
 
 		.main{
 			padding-top: 90%;
