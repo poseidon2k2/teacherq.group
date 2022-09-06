@@ -9,11 +9,10 @@
 	<div class="main">
 		<div style="display: flex;justify-content: space-around;">
 			<button class="btn" onclick="myFunction()">Nhận lời chúc</button>
-			<button class="btn-number" onclick="myFunction()">Số May Mắn</button>	
 		</div>
 		
 		<div id="par"></div>	
-		<div id="lucky"><p id="lucky-number"></p></div>	
+		<div id="lucky">Con Số May Mắn<p id="lucky-number"></p></div>	
 	</div>
 	
 	
@@ -25,8 +24,6 @@
 		function myFunction() {
 		  var element = document.getElementById("par");
 		  element.classList.toggle("show");
-		  var elementluc = document.getElementById("lucky");
-		  elementluc.classList.toggle("off");
 		}
 
 
